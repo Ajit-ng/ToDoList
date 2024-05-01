@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbarl">
+            <img src="./logo.jpg" alt="Left Image">
+        </div>
+        <div class="navbarc">
+            <h1>To-Do Task</h1>
+        </div>
+        <div class="navbar-right">
+            <button id="mode">mode</button>
+        </div>
+    </nav>
+
+    <div class="clock-box">
+        <div class="clock">
+            <div class="time" id="time"></div>
+            <div class="dday" id="dayDate"></div>
+        </div>
+    </div>
+
+
+
+    <div class="main-box">
+        <div class="main-box-first">
+            <div class="section">
+                <span class="increment1">0</span><br>
+                <span class="label">Total Tasks</span><br>
+            </div>
+
+            <div class="section">
+                <span class="increment2">0</span><br>
+                <span class="label">Remaining To Do</span><br>
+            </div>
+
+            <div class="section">
+                <span class="increment3">0</span><br>
+                <span class="label">Completed Tasks</span><br>
+            </div>
+        </div>
+
+
+        <div class="adding-section">
+            <button id="add-button">ADD TASK</button>
+            <button>
+                <select name="todos" class="filter-todo droplist">
+                    <option value="all" style="color: #fff">All</option>
+                    <option value="completed" style="color: #fff">Completed</option>
+                    <option value="incomplete" style="color: #fff">Incomplete</option>
+                </select>
+            </button>
+        </div>
+
+
+
+        <div id="myModal" class="modal-new">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <form class="todoform">
+                    <div class="input">
+                        <input type="text" placeholder="Add a new Task .." class="todo-input form-control"
+                            id="textInput" />
+
+                        <select id="select" class="select">
+                            <option value="work">Work</option>
+                            <option value="personal">Personal</option>
+                            <option value="shopping">Shopping</option>
+                            <option value="shopping">Household</option>
+                        </select>
+                        <button id="todo-button" class="todo-button" type="submit">
+                            <i class="fas fa-plus-square"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+            <div class="todo">
+
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+
+    <div class="container2"></div>
+
+        <h1 class="todo-task1">The List is Empty!</h1>
+        <div class="text">
+            <ul id="taskList"></ul>
+        </div>
+    </div>
+
+
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
