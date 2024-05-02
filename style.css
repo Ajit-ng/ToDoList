@@ -119,6 +119,7 @@
 
 .label {
     font-weight: bold;
+    color: white;
 }
 
 .adding-section {
@@ -240,6 +241,7 @@ input[type="text"] {
 }
 .todo-task1{
     text-align: center;
+    color: white;
 }
 
 #taskList {
